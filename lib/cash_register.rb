@@ -17,7 +17,6 @@ class CashRegister
     sum = price * quantity
     @total = @total + sum
     @items << title * quantity
-    @items.flatten
   end 
   
   def apply_discount
@@ -31,7 +30,7 @@ class CashRegister
   end 
   
   def items
-    @items
+    @items.flatten
   end 
 
 end 
