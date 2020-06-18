@@ -30,7 +30,7 @@ class CashRegister
   end 
   
   def items
-    @items.flatten
+    @items
   end 
 
 end 
