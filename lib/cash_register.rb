@@ -18,6 +18,7 @@ class CashRegister
     binding.pry
     @total = @total + sum
     @items << [title] * quantity
+    @items.flatten
   end 
   
   def apply_discount
